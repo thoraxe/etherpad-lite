@@ -14,7 +14,7 @@ run_node() {
     echo "Launching via nodemon..."
     exec nodemon --debug="$DEBUG_PORT"
   else
-    echo "Launching via npm..."
+    echo "Launching via node..."
     exec node node_modules/ep_etherpad-lite/node/server.js
   fi
 } 
